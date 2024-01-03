@@ -1,0 +1,34 @@
+#ceo{
+    background: url(../images/CEO-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 175px;
+    padding-bottom: 200px;
+    .ceo-content{
+        position: relative;
+        h2{
+            color: $primary_bg;
+            font-weight: 500;
+            padding-bottom: 50px;
+        }
+        p{
+            color: $primary_bg;
+            text-align: left;
+            span{
+                display: block;
+                padding-top: 64px;
+            }
+        }
+        .top-icon{
+            position: absolute;
+	        top: 60px;
+	        left: -96px;
+        }
+        .bottom-icon{
+            position: absolute;
+	        bottom: -80px;
+	        right: -90px;
+        }
+    }
+}

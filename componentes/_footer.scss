@@ -1,0 +1,89 @@
+#footer{
+    padding-bottom: 68px;
+    .footer-logo{
+        padding-bottom: 30px;
+        a{
+            font-size: 25px;
+            font-weight: 600;
+            color: $bg-text;
+        }
+    }
+    .footer-content{
+        p{
+            padding-right: 150px;
+        }
+    }
+    .footer-social{
+        padding-top: 40px;
+      li{
+        display: inline-block;
+        margin-right: 16px;
+        a{
+            height: 30px;
+            width: 30px;
+            background: $bg-text;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $text-white;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+      }
+    }
+    .footer-title{
+        padding-top: 10px;
+        padding-bottom: 40px;
+        h5{
+            font-weight: 600;
+            font-size: 18px;
+            color: $secondary_text;
+        }
+    }
+    ul{
+        li{
+            margin-bottom: 18px;
+            a{
+                font-size: 16px;
+                font-weight: 400;
+                color: $primary_text;
+            }
+        }
+    }
+    .f-input-item{
+        width: 80%;
+        height: 46px;
+        position: relative;
+        input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding-left: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 400;
+            color: $primary_text;
+            background: $primary_bg;
+            border: 4px solid $primary_bg;
+            transition: all linear .2s;
+            &:focus{
+                background: transparent;
+            }
+        }
+        a{
+            position: absolute;
+            right: 12px;
+            top: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $bg-text;
+            border-radius: 50%;
+            border: 3px solid $bg-text;
+            font-size: 18px;
+            font-weight: 900;
+        }
+    }
+}

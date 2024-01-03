@@ -1,0 +1,98 @@
+#banner{
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+    max-width: 1920px;
+    position: relative;
+    padding-top: 226px;
+    padding-bottom: 127px;
+    margin: 0 auto;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 238px;
+        height: 213px;
+        top: 127px;
+        right: 500px;
+        background: #C9E7FF;
+        opacity: 0.4;
+        border-radius: 106.5px 5px 5px 5px;
+        z-index: -10;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 238px;
+        height: 213px;
+        top: 784px;
+        right: 50px;
+        background: #C9E7FF;
+        opacity: 0.4;
+        border-radius: 106.5px 5px 5px 5px;
+        z-index: -10;
+        transform: rotate(-180deg);
+    }
+    .banner-content{
+        h1{
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 120%;
+        }
+        p{
+            padding: 40px 250px 40px 0px;
+        }
+        .banner-btn{
+            display: flex;
+            gap: 15px;
+            padding-bottom: 90px;
+        }
+        .banner-counter{
+            display: flex;
+            gap: 53px;
+            position: relative;
+            .b-counter-item{
+                h4{
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: $secondary_text;
+                    position: relative;
+                    z-index: 1;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: -16px;
+                        left: -6px;
+                        width: 45px;
+                        height: 45px;
+                        transform: rotate(45deg);
+                        border-radius: 50%;
+                        clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+                        z-index: -1;
+                    }
+                }
+                h5{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $primary_text;
+                    padding-top: 15px;
+                }
+                &:nth-child(1) h4::after{
+                    background: #FE8432;
+                }
+                &:nth-child(2) h4::after{
+                    background: #18A7B9;
+                }
+                &:nth-child(3) h4::after{
+                    background: #42B918;
+                }
+            }
+            .shape-one{
+                position: absolute;
+                top: -147px;
+                left: -161px;
+                z-index: -5;
+            }
+        }
+    }
+}

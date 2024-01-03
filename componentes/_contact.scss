@@ -1,0 +1,95 @@
+#contact{
+    padding-top: 140px;
+    padding-bottom: 70px;
+    .contact-title{
+        padding-bottom: 107px;
+    }
+    .contact-area{
+        .input-item{
+            width: 100%;
+            height: 64px;
+            position: relative;
+            margin-bottom: 20px;
+            input{
+                width: 100%;
+                height: 100%;
+                background: #F9F9F9;
+                border-radius: 7px;
+                outline: none;
+                border: none;
+                padding-left: 24px;
+                color: $secondary_text;
+                font-size: 18px;
+                font-weight: 400;
+                transition: all linear .4s;
+                border: 1px solid #F4F4F4;
+                caret-color:$bg-text;
+                &:focus,
+                &:valid{
+                    background: transparent;
+                }
+                &:focus ~ label,
+                &:valid ~ label{
+                    top: 0;
+                    transform: translateY(-50%);
+                    background: $text-white;
+                    font-size: 13px;
+                }
+            }
+            label{
+                position: absolute;
+                top: 20px;
+                left: 24px;
+                color: $primary_text;
+                font-weight: 400;
+                font-size: 18px;
+                pointer-events: none;
+                transition: all linear .4s;
+            }
+        }
+        .msg{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            margin-bottom: 30px;
+            textarea{
+                width: 100%;
+                height: 100%;
+                background: #F9F9F9;
+                border-radius: 7px;
+                outline: none;
+                border: none;
+                padding-left: 24px;
+                padding-top: 20px;
+                color: $secondary_text;
+                font-size: 18px;
+                font-weight: 400;
+                transition: all linear .4s;
+                border: 1px solid #F4F4F4;
+                resize: none;
+                caret-color:$bg-text;
+                &:focus,
+                &:valid{
+                    background: transparent;
+                }
+                &:focus ~ label,
+                &:valid ~ label{
+                    top: 0;
+                    transform: translateY(-50%);
+                    background: $text-white;
+                    font-size: 13px;
+                }
+            }
+            label{
+                position: absolute;
+                top: 20px;
+                left: 24px;
+                color: $primary_text;
+                font-weight: 400;
+                font-size: 18px;
+                pointer-events: none;
+                transition: all linear .4s;
+            }
+        }
+    }
+}
